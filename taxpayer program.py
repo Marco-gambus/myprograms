@@ -15,7 +15,7 @@ childTax = int(input("Enter the number of dependents: "))
 taxCharge = (grossIncome * TAX_FLAT_RATE) - STANDARD_DEDUCT
 finalTax = taxCharge - (childTax * CHILD_DEDUCT)
 
-print("The income tax is $" + str(finalTax))
+print("The income tax is $" + str(round(finalTax, 1)))
 
 
 
